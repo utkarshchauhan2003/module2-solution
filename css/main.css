@@ -1,0 +1,145 @@
+body{
+    text-align: center;    
+}
+h1 {
+    width: 100%;
+    text-align: center;
+}
+.main-container{
+    /* border: 1px solid grey; */
+    height: 500px;
+    text-align: center;
+}
+
+section {
+    padding: 16px 0;
+    margin: 2px 8px;
+    border: 1px solid #0023;
+    width: 30%;
+    height: auto;
+    text-align: left;
+
+}
+section p{
+    padding: 0 12px;
+}
+#sec-one{
+    background-color: rgb(210, 161, 255);
+}
+#sec-two{
+    background-color: rgb(159, 226, 43);
+}
+#sec-three{
+    background-color: rgb(255, 93, 134);
+}
+
+section > div{
+    display: block;
+    height: 60px;
+    position: relative;
+}
+section > div > p{
+    position: absolute;
+    right: 0;
+    padding: 10px 18px;
+    font-weight: bold;
+}
+
+#sec-one > div > p{
+    background-color: rgb(255, 82, 82);
+}
+#sec-two > div > p{
+    background-color: rgb(80, 0, 0);
+    color: white;
+}
+#sec-three > div > p{
+    background-color: aquamarine;
+
+}
+
+
+
+/* For Desktop and above */
+@media (min-width:992px){
+    .main-container{
+        padding-left: 1%;
+        margin-left:4%;
+    }
+    section {
+        float: left;
+    }
+
+}
+
+/* Tablet Breakpoint common */
+@media only screen and (min-width:768px) and (max-width:991.5px){
+    .main-container{
+        padding-left: 1%;
+        margin-left:4%;
+    }
+    
+    #sec-one, #sec-two{
+        float: left;
+        width: 45%;
+    }
+    #sec-three{
+        width: 86%;
+        position: absolute;
+        margin-top: 26.3%;        
+    }
+}
+/* Tablet > Sec -3 - Breakponit 1 */
+/* Color ,Position and Width only for Sec 3 */
+@media only screen and (min-width:768px) and (max-width:949.5px){
+    #sec-three{
+        width: 86%;
+        position: absolute;
+    }    
+}
+/* Tablet > Sec -3 - Breakponit 2 */
+@media only screen and (min-width:922.5px) and (max-width:949.5px){
+    #sec-three{
+        margin-top: 30.3%;        
+    }
+}
+/* Tablet > Sec -3 - Breakponit 3 */
+@media only screen and (min-width:880px) and (max-width:922.5px){
+    #sec-three{
+        margin-top: 30.3%;        
+    }
+}
+/* Tablet > Sec -3 - Breakponit 4 */
+@media only screen and (min-width:865px) and (max-width:880.5px){
+    #sec-three{
+        margin-top: 31.3%;        
+    }
+}
+
+/* Tablet > Sec -3 - Breakponit 5 */
+@media only screen and (min-width:830px) and (max-width:865.5px){
+    #sec-three{
+        margin-top: 34.3%;        
+    }
+}
+/* Tablet > Sec -3 - Breakponit 6 */
+@media only screen and (min-width:768px) and (max-width:830.5px){
+    #sec-three{
+        margin-top: 38.3%;        
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width:767.5px){
+    section{
+        width: 100%;
+        margin:5% 0;
+        padding: 2% 0 ;
+
+    }
+    .main-container{
+        margin:1% 8%;    
+        height: auto;
+    }
+    #sec-one{
+    }
+}
